@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "0.0.4",
+  "eodataPath": "s3://eodata/CLMS/bio-geophysical/river_and_lake_ice_extent/lie_northernhemisphere_500m_daily_v1",
+  "browserName": "LIE 500m daily V1",
+  "browserSearchPath": "CLMS Bio-geophysical Parameters, Water Bodies, River and Lake Ice Extent",
+  "collectionDescription": "Lake Ice Extent is provided daily for Northern Hemisphere, at a spatial resolution of ~500 m.",
+  "linkToCLMS": "https://land.copernicus.eu/en/products/water-bodies/lake-ice-extent-northern-hemisphere-500m",
+  "spatialCoverage": "Northern Hemisphere",
+  "temporalExtent": {
+    "start": "2021",
+    "end": "2025"
+  },
+  "nominalSpatialResolution": "500m",
+  "frequency": "daily",
+  "thumbnailLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/lie_northernhemisphere_500m_daily_v1/thumbnails/lie_northernhemisphere_500m_daily_v1.jpg",
+  "layers": [
+    {
+      "fileName": "LIE-NH-LIE",
+      "layerBrowserName": "Lake Ice Extent",
+      "shortDescription": "Lake Ice Extent classification",
+      "longDescription": "Classification of lake ice conditions: 1) Ice, 2) Open water, and 3) Cloud.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/lie_northernhemisphere_500m_daily_v1/colourmaps/clms_nhemi_lie_500m_lie_v1_daily.sld",
+      "legendLink": "https://github.com/copernicus-land/colourmaps-legends/blob/main/legends/clms_nhemi_lie_500m_lie_v1_daily.png",
+      "units": "",
+      "scale": "1",
+      "offSet": "0",
+      "display": 1
+    },
+    {
+      "fileName": "LIE-NH-P",
+      "layerBrowserName": "Statistical Probability",
+      "shortDescription": "Statistical probability of ice",
+      "longDescription": "Statistical probability of lake ice classification.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/lie_northernhemisphere_500m_daily_v1/colourmaps/clms_nhemi_lie_500m_statistical_probability_v1_daily.sld",
+      "legendLink": "https://github.com/copernicus-land/colourmaps-legends/blob/main/legends/clms_nhemi_lie_500m_statistical_probability_v1_daily.png",
+      "units": "[%]",
+      "scale": "1",
+      "offSet": "0",
+      "display": 1
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+name: Validate dataset layout
+on:
+  pull_request:
+  push:
+    branches: [datasetidentifier-layout, restructure]
+permissions:
+  contents: read
+jobs:
+  migration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/validate_layout.py
+      - run: git diff --check

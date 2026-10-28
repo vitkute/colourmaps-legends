@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "0.0.4",
+  "eodataPath": "s3://eodata/CLMS/bio-geophysical/land_surface_temperature/lst-daily-cycle_global_3km_10daily_v3",
+  "browserName": "LST Daily Cycle 3km 10-daily V3",
+  "browserSearchPath": "CLMS Bio-geophysical Parameters, Temperature and Reflectance, Land Surface Temperature",
+  "collectionDescription": "Land Surface Temperature estimates are provided at global scale, at a spatial resolution of ~3 km.",
+  "linkToCLMS": "",
+  "spatialCoverage": "Global",
+  "temporalExtent": {
+    "start": "2018",
+    "end": "present"
+  },
+  "nominalSpatialResolution": "3km",
+  "frequency": "10daily",
+  "thumbnailLink": "https://github.com/copernicus-land/colourmaps-legends/tree/main/thumbnails/lst-daily-cycle_global_3km_10daily_v3/clms_lst_global_3km_med_10daily-daily-cycle_v3.png",
+  "layers": [
+    {
+      "fileName": "LST10-DC-MIN",
+      "layerBrowserName": "LST Minimum",
+      "shortDescription": "Minimum of Land Surface Temperature observed during the 10-days period, per hour.",
+      "longDescription": "Minimum of Land Surface Temperature observed during the 10-days period, per hour. Expressed in Kelvin.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/lst-daily-cycle_global_3km_10daily_v3/colourmaps/clms_global_lst_3km_v3_min_10daily-daily-cycle.sld",
+      "legendLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/lst-daily-cycle_global_3km_10daily_v3/legends/lst-min-daily-cycle_global_3km_10daily_v3.png",
+      "units": "[K]",
+      "scale": "0.01",
+      "offSet": "273.15",
+      "display": 1
+    },
+    {
+      "fileName": "LST10-DC-MEDIAN",
+      "layerBrowserName": "LST Median",
+      "shortDescription": "Median of Land Surface Temperature observed during the 10-days period, per hour.",
+      "longDescription": "Median of Land Surface Temperature observed during the 10-days period, per hour. Expressed in Kelvin.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/lst-daily-cycle_global_3km_10daily_v3/colourmaps/clms_global_lst_3km_v3_med_10daily-daily-cycle.sld",
+      "legendLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/lst-daily-cycle_global_3km_10daily_v3/legends/lst-med-daily-cycle_global_3km_10daily_v3.png",
+      "units": "[K]",
+      "scale": "0.01",
+      "offSet": "273.15",
+      "display": 1
+    },
+    {
+      "fileName": "LST10-DC-MAX",
+      "layerBrowserName": "LST Maximum",
+      "shortDescription": "Maximum of Land Surface Temperature observed during the 10-days period, per hour.",
+      "longDescription": "Maximum of Land Surface Temperature observed during the 10-days period, per hour. Expressed in Kelvin.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/lst-daily-cycle_global_3km_10daily_v3/colourmaps/clms_global_lst_3km_v3_max_10daily-daily-cycle.sld",
+      "legendLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/lst-daily-cycle_global_3km_10daily_v3/legends/lst-max-daily-cycle_global_3km_10daily_v3.png",
+      "units": "[K]",
+      "scale": "0.01",
+      "offSet": "273.15",
+      "display": 1
+    },
+    {
+      "fileName": "LST10-DC-FOBS",
+      "layerBrowserName": "Fraction of valid observations",
+      "shortDescription": "Fraction of valid observations, per hour.",
+      "longDescription": "Fraction of valid observations as used to calculate the minimum, median and maximum temperature values, per hour.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/lst-daily-cycle_global_3km_10daily_v3/colourmaps/clms_global_lst_3km_v3_frac_valid_10daily-daily-cycle.sld",
+      "legendLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/lst-daily-cycle_global_3km_10daily_v3/legends/lst-frac-valid-daily-cycle_global_3km_10daily_v3.png",
+      "units": "",
+      "scale": "0.01",
+      "offSet": "0",
+      "display": 1
+    }
+  ]
+}

@@ -1,73 +1,51 @@
 # CLMS Colourmaps and Legends
 
-This repository contains the colour maps, legends, thumbnails, and data descriptors for the Copernicus Land Monitoring Service (CLMS). These resources define the visualization styles and metadata for CLMS data products, covering both the Copernicus Global Land Service (CGLS) and pan-European/local components such as the Vegetation Land Cover and Change (VLCC), Urban Atlas (UA), and Water and Snow/Ice (WSI) product families.
+Colourmaps, legends, thumbnails, and collection descriptors for the Copernicus Land Monitoring Service (CLMS).
 
-## Repository Structure
-```
-colourmaps-legends/
-├── README.md                  # This documentation file
-├── LICENSE                    # License information for this repository
-├── colourmaps/                # Colour maps for CLMS data products
-│   ├── <dataset_name>/        # One folder per dataset
-│   │   ├── *.sld              # Style Layer Descriptor XML format files
-│   │   └── *.txt              # Legacy QGIS colour map export files
-├── legends/                   # Legend images for visualization
-│   └── <dataset_name>/
-│       └── *.png
-├── thumbnails/                # Thumbnail images for dataset preview
-│   └── <dataset_name>/
-│       └── *.jpg
-├── data_descriptors/          # JSON metadata for Copernicus Browser integration
-│   └── <dataset_name>/
-│       └── *.json
-├── schemas/                   # JSON schema templates and versioning
-│   └── data_descriptors/
-│       └── <version>/
-│           └── information_template.json
-└── docs/                      # Documentation
-    ├── Structure_description_of_the_proposed_json_scheme_for_CLMS_collections.adoc
-    └── CLMS_Thumbnail_Specifications.adoc
+## Organization by datasetIdentifier
+
+Resources are grouped by the CDSE OData `datasetIdentifier`, for example `ba_global_300m_daily_v4`. Keep the full identifier, including coverage, resolution, frequency, and version. Dates and layer names belong in asset filenames, not in a second dataset identifier when CDSE groups them into one dataset.
+
+```text
+datasets/<datasetIdentifier>/
+    colourmaps/          GIS styles and colour tables
+    data_descriptors/    Collection descriptors; original filenames retained
+    legends/             Legend images
+    thumbnails/          Dataset preview images
+catalogue.json           Dataset identifiers, verification status, and asset paths
+schemas/                 Versioned descriptor templates
+docs/                    Specifications and migration records
+scripts/                 Migration and validation tools
 ```
 
-## Product Families
+Only resource types that have files are present. A dataset can have multiple layers, styles, resolutions, or dated descriptor variants. Existing duplicate descriptors are preserved under `data_descriptors/variants/<original-folder>/`; no duplicate is automatically selected as authoritative.
 
-This repository covers the following CLMS product families:
+The authoritative naming reference is the [CDSE CLMS documentation](https://documentation.dataspace.copernicus.eu/Data/CopernicusServices/CLMS.html#table-datasetidentifier). `catalogue.json` marks identifiers as `documented` when found in that documentation on 2026-10-28 and `provisional` otherwise. Provisional identifiers come from existing descriptor metadata or resource filenames and require confirmation. Documentation presence does not prove live catalogue availability.
 
-- **CGLS (Copernicus Global Land Service)**: Global bio-geophysical products (NDVI, LAI, FCOVER, FAPAR, DMP, GDMP, SSM, SWI, LST, BA, LSP, etc.)
-- **VLCC (Vegetation Land Cover and Change)**: Pan-European land cover, forest type, grassland, tree cover density, crop types, and related products
-- **UA (Urban Atlas)**: Urban land cover/land use, building height, and street tree layer
-- **WSI (Water and Snow/Ice)**: Snow cover, snow water equivalent, lake/river water level, water quality, water bodies, and related products
+A STAC Collection ID is a separate mapping. For example, CDSE publishes format-specific STAC collections such as `clms_ba_global_300m_daily_v4_cog`, whereas the datasetIdentifier is `ba_global_300m_daily_v4`. Do not substitute a STAC ID or an individual product ID for this repository's dataset key.
 
-## Standard Format
+## Find a resource
 
-SLD (Style Layer Descriptor) is the standard format used for colour maps. TXT files are maintained for legacy compatibility but are no longer actively developed.
+Open a dataset folder or look it up in `catalogue.json`. Asset paths in the catalogue are relative to the repository root. Existing asset filenames and layer names are retained. Dataset-specific descriptors link to their relocated assets, including resources maintained under another dataset when those links already existed.
 
-## Naming Convention
+SLD is the preferred colourmap interchange format. Existing QML, CLR, LYR/LYRX, TXT and other formats remain available. Legacy TXT assets have been preserved.
 
-The **folder** name follows the pattern:
-- CGLS products: `<dataset_short_name>_<coverage_area>_<nominal_resolution>_<temporal_sampling>_<version>`, e.g., `ndvi_global_300m_10daily_v2`
-- VLCC/UA/WSI products: `clms_<family>_<product_name>`, e.g., `clms_vlcc_crop-types`, `clms_ua_building-height`, `clms_wsi_fractional-snow-cover`
+## Contribute
 
-The filename of the colour maps and legends follows this pattern:
+1. Confirm the exact CDSE datasetIdentifier; use its spelling and case.
+2. Add resources under the corresponding dataset folder and resource type.
+3. Keep variable and date variants distinct in filenames.
+4. Update collection descriptors and `catalogue.json` together.
+5. Run `python3 scripts/validate_layout.py` with Python 3.10 or later. See the migration notes for the validator's current scope.
 
-- **Colourmaps**: `<layer_name>.(sld|txt)`, e.g., `clms_global_ndvi_1km_v2_10daily.sld`
-- **Data descriptors**: `<dataset_name>.json`, e.g., `fapar_global_1km_10daily_v2.json`
-- **Legends**: `<layer_name>.png`, e.g., `clms_global_ndvi_1km_v2_10daily.png`
+Descriptor templates remain under `schemas/data_descriptors/<version>/`. See [descriptor documentation](docs/Structure_description_of_the_proposed_json_scheme_for_CLMS_collections.adoc) and [thumbnail specifications](docs/CLMS_Thumbnail_Specifications.adoc).
 
-NOTE: in case of multiple layers/variables names should be distinct accordingly to the specific variable represented e.g. `clms_global_NDVI300-NDVI_v2_10daily.sld`, `clms_global_NDVI300-NOBS_v2_10daily.sld` ...
+## Migration and compatibility
 
-## Data Descriptors
+This branch changes repository asset paths. External consumers must update their links before adopting the new layout. Old GitHub asset URLs do not automatically redirect. The [migration notes](docs/migration/README.md) include the complete old-to-new path map, provisional identifiers, baseline link problems, and validation results.
 
-The `data_descriptors/` folder contains JSON files that provide metadata for integrating CLMS collections into the Copernicus Browser. Each JSON file describes a single collection and its layers.
+Historical indexes and root metadata are archived under `docs/migration/`; they are not current inventories. `catalogue.json` replaces those inventories with explicit dataset keys and portable paths.
 
-For detailed documentation on how to populate these files, see [Data Descriptors Documentation](docs/Structure_description_of_the_proposed_json_scheme_for_CLMS_collections.adoc).
+## License
 
-Schema templates for each version are available under `schemas/data_descriptors/`.
-
-## Thumbnails
-
-The `thumbnails/` folder contains preview images for each dataset, used in the Copernicus Browser. For specifications, see [Thumbnail Specifications](docs/CLMS_Thumbnail_Specifications.adoc).
-
-## Contact
-
-For questions or additional information about these resources, please contact the Copernicus Land Monitoring Service team.
+See [LICENSE](LICENSE).

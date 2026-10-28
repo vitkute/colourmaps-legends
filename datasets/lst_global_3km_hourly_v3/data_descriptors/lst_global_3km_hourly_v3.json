@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "0.0.4",
+  "eodataPath": "s3://eodata/CLMS/bio-geophysical/land_surface_temperature/lst_global_3km_hourly_v3",
+  "browserName": "LST 3km hourly V3",
+  "browserSearchPath": "CLMS Bio-geophysical Parameters, Temperature and Reflectance, Land Surface Temperature",
+  "collectionDescription": "Land Surface Temperature estimates are provided at global scale, at a spatial resolution of ~3 km.",
+  "linkToCLMS": "",
+  "spatialCoverage": "Global",
+  "temporalExtent": {
+    "start": "2018",
+    "end": "present"
+  },
+  "nominalSpatialResolution": "3km",
+  "frequency": "hourly",
+  "thumbnailLink": "https://github.com/copernicus-land/colourmaps-legends/tree/main/thumbnails/lst_global_3km_hourly_v3/clms_lst_global_3km_hourly_v3.png",
+  "layers": [
+    {
+      "fileName": "LST-LST",
+      "layerBrowserName": "LST",
+      "shortDescription": "Land Surface Temperature [K].",
+      "longDescription": "Land Surface Temperature, expressed in Kelvin.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/lst_global_3km_hourly_v3/colourmaps/clms_global_lst_3km_v3_hourly.sld",
+      "legendLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/lst_global_3km_hourly_v3/legends/lst_global_3km_hourly_v3.png",
+      "units": "[K]",
+      "scale": "0.01",
+      "offSet": "273.15",
+      "display": 1
+    },
+    {
+      "fileName": "LST-ERRORBAR",
+      "layerBrowserName": "LST error",
+      "shortDescription": "Error bar for LST [K].",
+      "longDescription": "Estimate of the error bar in a pixel-by-pixel basis, expressed in Kelvin.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/lst_global_3km_hourly_v3/colourmaps/clms_global_lst-errorbar_3km_v3_hourly.sld",
+      "legendLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/lst_global_3km_hourly_v3/legends/lst-errorbar_global_3km_hourly_v3.png",
+      "units": "[K]",
+      "scale": "0.01",
+      "offSet": "0",
+      "display": 0
+    },
+    {
+      "fileName": "LST-TIMEDELTA",
+      "layerBrowserName": "LST Time Delta",
+      "shortDescription": "Time between the observation time and the reference time written in the output file name [min].",
+      "longDescription": "Time between the observation time and the reference time written in the output file name, expressed in minutes.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/lst_global_3km_hourly_v3/colourmaps/clms_global_lst-timedelta_3km_v3_hourly.sld",
+      "legendLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/lst_global_3km_hourly_v3/legends/lst-timedelta_global_3km_hourly_v3.png",
+      "units": "[min]",
+      "scale": "0",
+      "offSet": "0",
+      "display": 0
+    },
+    {
+      "fileName": "LST-QFLAG",
+      "layerBrowserName": "Quality Flag",
+      "shortDescription": "",
+      "longDescription": "",
+      "colourMapLink": "",
+      "legendLink": "",
+      "units": "",
+      "scale": "",
+      "offSet": "",
+      "display": 0
+    }
+  ]
+}
