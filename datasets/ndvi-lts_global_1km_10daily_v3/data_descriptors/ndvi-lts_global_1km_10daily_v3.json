@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "0.0.4",
+  "eodataPath": "s3://eodata/CLMS/bio-geophysical/vegetation_indices/ndvi-lts_global_1km_10daily_v3",
+  "browserName": "NDVI LTS 1km 10-daily V3",
+  "browserSearchPath": "CLMS Bio-geophysical Parameters, Vegetation, Vegetation Indices, NDVI LTS 1km 10-daily V3",
+  "collectionDescription": "Long-Term Statistics of the Normalized Difference Vegetation Index are provided. Every 10-days, minimum, median, maximum and mean are available at global scale, at a spatial resolution of ~1 km over the 21-years period 1999-2019.",
+  "linkToCLMS": "https://land.copernicus.eu/en/products/vegetation/normalised-difference-vegetation-long-term-statistics-v3-0-1km",
+  "spatialCoverage": "Global",
+  "temporalExtent": {
+    "start": "1999",
+    "end": "2019"
+  },
+  "nominalSpatialResolution": "1km",
+  "frequency": "10daily",
+  "thumbnailLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ndvi-lts_global_1km_10daily_v3/thumbnails/ndvi-lts_global_1km_10daily_v3.jpg",
+  "layers": [
+    {
+      "fileName": "NDVI-MAX-LTS",
+      "layerBrowserName": "Maximum NDVI",
+      "shortDescription": "Maximum value of Normalized Difference Vegetation Index",
+      "longDescription": "Maximum value of the Normalized Difference Vegetation Index calculated over the 21-years period 1999-2019.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ndvi-lts_global_1km_10daily_v3/colourmaps/clms_global_ndvi-lts-max_1km_v3_10daily.sld",
+      "legendLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ndvi-lts_global_1km_10daily_v3/legends/ndvi-lts-max_global_1km_10daily_v3.png",
+      "units": "",
+      "scale": "0.004",
+      "offSet": "-0.08",
+      "display": 1
+    },
+    {
+      "fileName": "NDVI-MEAN-LTS",
+      "layerBrowserName": "Mean NDVI",
+      "shortDescription": "Mean value of Normalized Difference Vegetation Index",
+      "longDescription": "Mean value of the Normalized Difference Vegetation Index calculated over the 21-years period 1999-2019.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ndvi-lts_global_1km_10daily_v3/colourmaps/clms_global_ndvi-lts-mean_1km_v3_10daily.sld",
+      "legendLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ndvi-lts_global_1km_10daily_v3/legends/ndvi-lts-mean_global_1km_10daily_v3.png",
+      "units": "",
+      "scale": "0.004",
+      "offSet": "-0.08",
+      "display": 1
+    },
+    {
+      "fileName": "NDVI-MEDIAN-LTS",
+      "layerBrowserName": "Median NDVI",
+      "shortDescription": "Median value of Normalized Difference Vegetation Index",
+      "longDescription": "Median value of the Normalized Difference Vegetation Index calculated over the 21-years period 1999-2019.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ndvi-lts_global_1km_10daily_v3/colourmaps/clms_global_ndvi-lts-median_1km_v3_10daily.sld",
+      "legendLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ndvi-lts_global_1km_10daily_v3/legends/ndvi-lts-median_global_1km_10daily_v3.png",
+      "units": "",
+      "scale": "0.004",
+      "offSet": "-0.08",
+      "display": 1
+    },
+    {
+      "fileName": "NDVI-MIN-LTS",
+      "layerBrowserName": "Minimum NDVI",
+      "shortDescription": "Minimum value of Normalized Difference Vegetation Index",
+      "longDescription": "Minimum value of the Normalized Difference Vegetation Index calculated over the 21-years period 1999-2019.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ndvi-lts_global_1km_10daily_v3/colourmaps/clms_global_ndvi-lts-min_1km_v3_10daily.sld",
+      "legendLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ndvi-lts_global_1km_10daily_v3/legends/ndvi-lts-min_global_1km_10daily_v3.png",
+      "units": "",
+      "scale": "0.004",
+      "offSet": "-0.08",
+      "display": 1
+    },
+    {
+      "fileName": "NDVI-STDEV-LTS",
+      "layerBrowserName": "NDVI Standard Deviation",
+      "shortDescription": "Standard deviation of Normalized Difference Vegetation Index",
+      "longDescription": "Standard deviation of the Normalized Difference Vegetation Index calculated over the 21-years period 1999-2019.",
+      "colourMapLink": "",
+      "legendLink": "",
+      "units": "",
+      "scale": "0.004",
+      "offSet": "0",
+      "display": 0
+    },
+    {
+      "fileName": "NDVI-NOBSV-LTS",
+      "layerBrowserName": "Number of Observations",
+      "shortDescription": "Number of NDVI values used to calculate the statistics",
+      "longDescription": "Number of NDVI values used to calculate the statistics over the 21-years period 1999-2019.",
+      "colourMapLink": "",
+      "legendLink": "",
+      "units": "",
+      "scale": "",
+      "offSet": "",
+      "display": 0
+    }
+  ]
+}
