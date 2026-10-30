@@ -1,0 +1,912 @@
+{
+  "baseCommit": "cf363c304713fbf1a91d7921673497f213144b8a",
+  "movedFiles": 1655,
+  "datasetIdentifiers": 206,
+  "documentedIdentifiers": 130,
+  "provisionalIdentifiers": [
+    "clms_pa_land-cover-land-use_europe_V05ha_3yearly_v1",
+    "clms_vpp_st-ppi_europe_100m_yearly_v1",
+    "clms_vpp_st-ppi_europe_10m_yearly_v1",
+    "clms_vpp_st-ppi_europe_utm_10m_10daily_v1",
+    "clms_vpp_vpp-ampl_europe_100m_yearly_v1",
+    "clms_vpp_vpp-ampl_europe_10m_yearly_v1",
+    "clms_vpp_vpp-ampl_europe_utm_10m_yearly_v1",
+    "clms_vpp_vpp-eosd_europe_100m_yearly_v1",
+    "clms_vpp_vpp-eosd_europe_10m_yearly_v1",
+    "clms_vpp_vpp-eosd_europe_utm_10m_yearly_v1",
+    "clms_vpp_vpp-eosv_europe_100m_yearly_v1",
+    "clms_vpp_vpp-eosv_europe_10m_yearly_v1",
+    "clms_vpp_vpp-eosv_europe_utm_10m_yearly_v1",
+    "clms_vpp_vpp-length_europe_100m_yearly_v1",
+    "clms_vpp_vpp-length_europe_10m_yearly_v1",
+    "clms_vpp_vpp-length_europe_utm_10m_yearly_v1",
+    "clms_vpp_vpp-lslope_europe_100m_yearly_v1",
+    "clms_vpp_vpp-lslope_europe_10m_yearly_v1",
+    "clms_vpp_vpp-lslope_europe_utm_10m_yearly_v1",
+    "clms_vpp_vpp-maxd_europe_100m_yearly_v1",
+    "clms_vpp_vpp-maxd_europe_10m_yearly_v1",
+    "clms_vpp_vpp-maxd_europe_utm_10m_yearly_v1",
+    "clms_vpp_vpp-maxv_europe_100m_yearly_v1",
+    "clms_vpp_vpp-maxv_europe_10m_yearly_v1",
+    "clms_vpp_vpp-maxv_europe_utm_10m_yearly_v1",
+    "clms_vpp_vpp-minv_europe_100m_yearly_v1",
+    "clms_vpp_vpp-minv_europe_10m_yearly_v1",
+    "clms_vpp_vpp-minv_europe_utm_10m_yearly_v1",
+    "clms_vpp_vpp-qflag_europe_100m_yearly_v1",
+    "clms_vpp_vpp-qflag_europe_10m_yearly_v1",
+    "clms_vpp_vpp-qflag_europe_utm_10m_yearly_v1",
+    "clms_vpp_vpp-rslope_europe_100m_yearly_v1",
+    "clms_vpp_vpp-rslope_europe_10m_yearly_v1",
+    "clms_vpp_vpp-rslope_europe_utm_10m_yearly_v1",
+    "clms_vpp_vpp-sosd_europe_100m_yearly_v1",
+    "clms_vpp_vpp-sosd_europe_10m_yearly_v1",
+    "clms_vpp_vpp-sosd_europe_utm_10m_yearly_v1",
+    "clms_vpp_vpp-sosv_europe_100m_yearly_v1",
+    "clms_vpp_vpp-sosv_europe_10m_yearly_v1",
+    "clms_vpp_vpp-sosv_europe_utm_10m_yearly_v1",
+    "clms_vpp_vpp-sprod_europe_100m_yearly_v1",
+    "clms_vpp_vpp-sprod_europe_10m_yearly_v1",
+    "clms_vpp_vpp-sprod_europe_utm_10m_yearly_v1",
+    "clms_vpp_vpp-tprod_europe_100m_yearly_v1",
+    "clms_vpp_vpp-tprod_europe_10m_yearly_v1",
+    "clms_vpp_vpp-tprod_europe_utm_10m_yearly_v1",
+    "clms_wsi_cloud-classification_europe_utm_20m_daily_v1",
+    "clms_wsi_fractional-snow-cover_europe_utm_20m_daily_v2",
+    "clms_wsi_gap-filled-fractional-snow-cover_europe_utm_60m_daily_v1",
+    "clms_wsi_high-resolution-water-layer_europe_laea_100m_3yearly_v1",
+    "clms_wsi_high-resolution-water-layer_europe_laea_10m_3yearly_v1",
+    "clms_wsi_high-resolution-water-layer_europe_utm_10m_3yearly_v1",
+    "clms_wsi_ice-cover-duration_europe_laea_100m_yearly_v1",
+    "clms_wsi_ice-cover-duration_europe_laea_20m_yearly_v1",
+    "clms_wsi_ice-cover-duration_europe_utm_20m_yearly_v1",
+    "clms_wsi_sar-wet-snow_europe_utm_60m_daily_v2",
+    "clms_wsi_snow-phenology-s1-s2_europe_laea_100m_yearly_v1",
+    "clms_wsi_snow-phenology-s1-s2_europe_laea_60m_yearly_v1",
+    "clms_wsi_snow-phenology-s1-s2_europe_utm_60m_yearly_v1",
+    "clms_wsi_snow-phenology-s2_europe_laea_100m_yearly_v1",
+    "clms_wsi_snow-phenology-s2_europe_laea_20m_yearly_v1",
+    "clms_wsi_snow-phenology-s2_europe_utm_20m_yearly_v1",
+    "clms_wsi_water-cover-duration_europe_laea_100m_yearly_v1",
+    "clms_wsi_water-cover-duration_europe_laea_10m_yearly_v1",
+    "clms_wsi_water-cover-duration_europe_utm_10m_yearly_v1",
+    "clms_wsi_water-ice-cover-s1-s2_europe_utm_20m_daily_v1",
+    "clms_wsi_water-ice-cover-s1_europe_utm_60m_daily_v1",
+    "clms_wsi_water-ice-cover-s2_europe_utm_20m_daily_v1",
+    "clms_wsi_wet-dry-snow_europe_utm_60m_daily_v2",
+    "fapar_global_1km_10daily_v1",
+    "fcover_global_1km_10daily_v1",
+    "lai_global_1km_10daily_v1",
+    "lwq-nrt_global_1km_10daily_v1",
+    "lwq-reproc_global_1km_10daily_v1",
+    "ssm_global_1km_daily_v2",
+    "swi_global_1km_daily_v3"
+  ],
+  "rewrittenJsonFiles": 165,
+  "failures": [],
+  "preExistingUnresolvedLinks": [
+    {
+      "source": "datasets/ba_global_300m_daily_v3/data_descriptors/ba_global_300m_daily_v3.json",
+      "target": "legends/clms_global_ba_300m_v3_daily.png"
+    },
+    {
+      "source": "datasets/ba_global_300m_monthly_v3/data_descriptors/ba_global_300m_monthly_v3.json",
+      "target": "legends/clms_global_ba_300m_v3_monthly.png"
+    },
+    {
+      "source": "datasets/clms_ua_land-cover-land-use-change_europe_V010ha_3yearly_v1/data_descriptors/clms_ua_land-cover-land-use-change_europe_V010ha_3yearly_v1_2018-2021.json",
+      "target": "colourmaps/clms_ua_land-cover-land-use-change/clms_ua_land-cover-land-use-change_europe_V010ha_3yearly_v1_2018-2021.sld "
+    },
+    {
+      "source": "datasets/clms_ua_street-tree-layer_europe_V005ha_3yearly_v1/data_descriptors/clms_ua_street-tree-layer_europe_V005ha_3yearly_v1_2021.json",
+      "target": "colourmaps/clms_ua_street-tree-layer/clms_ua_street-tree-layer_europe_V005ha_3yearly_v1_um.sld"
+    },
+    {
+      "source": "datasets/clms_vlcc_main-crop-emergence_europe_10m_yearly_v1/data_descriptors/clms_vlcc_main-crop-emergence_europe_10m_yearly_v1.json",
+      "target": "colourmaps/clms_vlcc_main-crop-emergence/clms_vlcc_main-crop-emergence_europe_10m_yearly_v1.sld"
+    },
+    {
+      "source": "datasets/clms_vlcc_main-crop-harvest_europe_10m_yearly_v1/data_descriptors/clms_vlcc_main-crop-harvest_europe_10m_yearly_v1.json",
+      "target": "colourmaps/clms_vlcc_main-crop-harvest/clms_vlcc_main-crop-harvest_europe_10m_yearly_v1.sld"
+    },
+    {
+      "source": "datasets/clms_vlcc_secondary-crop-emergence_europe_10m_yearly_v1/data_descriptors/clms_vlcc_secondary-crop-emergence_europe_10m_yearly_v1.json",
+      "target": "colourmaps/clms_vlcc_secondary-crop-emergence/clms_vlcc_secondary-crop-emergence_europe_10m_yearly_v1.sld"
+    },
+    {
+      "source": "datasets/dmp_global_1km_10daily_v2/data_descriptors/dmp_global_1km_10daily_v2.json",
+      "target": "legends/clms_global_dmp_1km_v2_10daily.png"
+    },
+    {
+      "source": "datasets/dmp_global_300m_10daily_v1/data_descriptors/dmp_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_dmp_1km_v2_10daily.png"
+    },
+    {
+      "source": "datasets/dmp_global_300m_10daily_v2/data_descriptors/dmp_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_dmp_1km_v2_10daily.png"
+    },
+    {
+      "source": "datasets/eta_global_300m_10daily_v1/data_descriptors/eta_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_eta_et-ensemble_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/eta_global_300m_10daily_v1/data_descriptors/eta_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_eta_et-etlook_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/eta_global_300m_10daily_v1/data_descriptors/eta_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_eta_et-std_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/eta_global_300m_10daily_v1/data_descriptors/eta_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_eta_e-ensemble_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/eta_global_300m_10daily_v1/data_descriptors/eta_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_eta_e-etlook_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/eta_global_300m_10daily_v1/data_descriptors/eta_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_eta_e-std_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/eta_global_300m_10daily_v1/data_descriptors/eta_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_eta_et-ensemble_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/eta_global_300m_10daily_v1/data_descriptors/eta_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_eta_et-etlook_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/eta_global_300m_10daily_v1/data_descriptors/eta_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_eta_et-std_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/eta_global_300m_10daily_v1/data_descriptors/eta_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_eta-nobs_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/eta_global_300m_10daily_v1/data_descriptors/eta_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_eta-flag_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/fapar_global_1km_10daily_v1/data_descriptors/fapar_global_1km_10daily_v1.json",
+      "target": "legends/clms_global_fapar_1km_v1_10daily.png"
+    },
+    {
+      "source": "datasets/fapar_global_1km_10daily_v2/data_descriptors/fapar_global_1km_10daily_v2.json",
+      "target": "legends/clms_global_fapar_1km_v2_10daily.png"
+    },
+    {
+      "source": "datasets/fapar_global_300m_10daily_v1/data_descriptors/fapar_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_fapar_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/fapar_global_300m_10daily_v2/data_descriptors/fapar_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_fapar-fapar_300m_v2_10daily.png"
+    },
+    {
+      "source": "datasets/fapar_global_300m_10daily_v2/data_descriptors/fapar_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_fapar-rmse_300m_v2_10daily.png"
+    },
+    {
+      "source": "datasets/fapar_global_300m_10daily_v2/data_descriptors/fapar_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_fapar-nobs_300m_v2_10daily.png"
+    },
+    {
+      "source": "datasets/fapar_global_300m_10daily_v2/data_descriptors/fapar_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_fapar-lbefore_300m_v2_10daily.png"
+    },
+    {
+      "source": "datasets/fapar_global_300m_10daily_v2/data_descriptors/fapar_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_fapar-lafter_300m_v2_10daily.png"
+    },
+    {
+      "source": "datasets/fcover_global_1km_10daily_v1/data_descriptors/fcover_global_1km_10daily_v1.json",
+      "target": "legends/clms_global_fcover_1km_v1_10daily.png"
+    },
+    {
+      "source": "datasets/fcover_global_1km_10daily_v2/data_descriptors/fcover_global_1km_10daily_v2.json",
+      "target": "legends/clms_global_fcover_1km_v2_10daily.png"
+    },
+    {
+      "source": "datasets/fcover_global_300m_10daily_v1/data_descriptors/fcover_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_fcover_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/fcover_global_300m_10daily_v2/data_descriptors/fcover_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_fcover-fcover_300m_v2_10daily.png"
+    },
+    {
+      "source": "datasets/fcover_global_300m_10daily_v2/data_descriptors/fcover_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_fcover-rmse_300m_v2_10daily.png"
+    },
+    {
+      "source": "datasets/fcover_global_300m_10daily_v2/data_descriptors/fcover_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_fcover-nobs_300m_v2_10daily.png"
+    },
+    {
+      "source": "datasets/fcover_global_300m_10daily_v2/data_descriptors/fcover_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_fcover-lbefore_300m_v2_10daily.png"
+    },
+    {
+      "source": "datasets/fcover_global_300m_10daily_v2/data_descriptors/fcover_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_fcover-lafter_300m_v2_10daily.png"
+    },
+    {
+      "source": "datasets/gdmp_global_1km_10daily_v2/data_descriptors/gdmp_global_1km_10daily_v2.json",
+      "target": "legends/clms_global_gdmp_1km_v2_10daily.png"
+    },
+    {
+      "source": "datasets/gdmp_global_300m_10daily_v1/data_descriptors/gdmp_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_gdmp_1km_v2_10daily.png"
+    },
+    {
+      "source": "datasets/gdmp_global_300m_10daily_v2/data_descriptors/gdmp_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_gdmp_1km_v2_10daily.png"
+    },
+    {
+      "source": "datasets/gpp_global_300m_10daily_v1/data_descriptors/gpp_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_gpp_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/gpp_global_300m_10daily_v2/data_descriptors/gpp_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_gpp_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/hf_global_300m_daily_v1/data_descriptors/hf_global_300m_daily_v1.json",
+      "target": "legends/clms_global_hf-h_300m_v1_daily.png"
+    },
+    {
+      "source": "datasets/hf_global_300m_daily_v1/data_descriptors/hf_global_300m_daily_v1.json",
+      "target": "legends/clms_global_hf-le_300m_v1_daily.png"
+    },
+    {
+      "source": "datasets/lai_global_1km_10daily_v1/data_descriptors/lai_global_1km_10daily_v1.json",
+      "target": "legends/clms_global_lai_1km_v1_10daily.png"
+    },
+    {
+      "source": "datasets/lai_global_1km_10daily_v2/data_descriptors/lai_global_1km_10daily_v2.json",
+      "target": "legends/clms_global_lai_1km_v2_10daily.png"
+    },
+    {
+      "source": "datasets/lai_global_300m_10daily_v1/data_descriptors/lai_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_lai_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/lai_global_300m_10daily_v2/data_descriptors/lai_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_lai-lai_300m_v2_10daily.png"
+    },
+    {
+      "source": "datasets/lai_global_300m_10daily_v2/data_descriptors/lai_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_lai-rmse_300m_v2_10daily.png"
+    },
+    {
+      "source": "datasets/lai_global_300m_10daily_v2/data_descriptors/lai_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_lai-nobs_300m_v2_10daily.png"
+    },
+    {
+      "source": "datasets/lai_global_300m_10daily_v2/data_descriptors/lai_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_lai-lbefore_300m_v2_10daily.png"
+    },
+    {
+      "source": "datasets/lai_global_300m_10daily_v2/data_descriptors/lai_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_lai-lafter_300m_v2_10daily.png"
+    },
+    {
+      "source": "datasets/lcm_global_10m_yearly_v1/data_descriptors/lcfm-lcm_global_10m_yearly_v1.json",
+      "target": "legends/lcfm-lcm_global_10m_yearly_v1.png"
+    },
+    {
+      "source": "datasets/tcd_pantropical_10m_yearly_v1/data_descriptors/lcfm-tcd_pantropical_10m_yearly_v1.json",
+      "target": "legends/lcfm-tcd_pantropical_10m_yearly_v1.png"
+    },
+    {
+      "source": "datasets/lie_baltic_250m_daily_v1/data_descriptors/lie_baltic_250m_daily_v1.json",
+      "target": "legends/clms_baltic_lie_250m_v1_daily.png"
+    },
+    {
+      "source": "datasets/lie_europe_250m_daily_v2/data_descriptors/lie_ceurope_250m_daily_v2.json",
+      "target": "legends/clms_ceuro_lie_250m_v2_daily.png"
+    },
+    {
+      "source": "datasets/lie_northernhemisphere_500m_daily_v1/data_descriptors/lie_northernhemisphere_500m_daily_v1.json",
+      "target": "legends/clms_nhemi_lie_500m_lie_v1_daily.png"
+    },
+    {
+      "source": "datasets/lie_northernhemisphere_500m_daily_v1/data_descriptors/lie_northernhemisphere_500m_daily_v1.json",
+      "target": "legends/clms_nhemi_lie_500m_statistical_probability_v1_daily.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_sosd_season1.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_sosd_season2.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_eosd_season1.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_eosd_season2.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_maxv_season1.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_maxv_season2.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_minv_season1.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_minv_season2.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_ampl_season1.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_ampl_season2.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_maxd_season1.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_maxd_season2.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_length_season1.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_length_season2.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_sprod_season1.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_sprod_season2.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_tprod_season1.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_tprod_season2.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_lslope_season1.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_lslope_season2.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_rslope_season1.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_rslope_season2.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_sosv_season1.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_sosv_season2.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_eosv_season1.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_eosv_season2.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_qa_season1.png"
+    },
+    {
+      "source": "datasets/lsp_global_300m_yearly_v1/data_descriptors/lsp_global_300m_yearly_v1.json",
+      "target": "legends/clms_global_lsp_300m_v1_yearly_qa_season2.png"
+    },
+    {
+      "source": "datasets/lst-daily-cycle_global_5km_10daily_v1/data_descriptors/lst-daily-cycle_global_5km_10daily_v1.json",
+      "target": "legends/clms_global_lst_5km_v1_min_10daily-daily-cycle.png"
+    },
+    {
+      "source": "datasets/lst-daily-cycle_global_5km_10daily_v1/data_descriptors/lst-daily-cycle_global_5km_10daily_v1.json",
+      "target": "legends/clms_global_lst_5km_v1_max_10daily-daily-cycle.png"
+    },
+    {
+      "source": "datasets/lst-daily-cycle_global_5km_10daily_v1/data_descriptors/lst-daily-cycle_global_5km_10daily_v1.json",
+      "target": "legends/clms_global_lst_5km_v1_med_10daily-daily-cycle.png"
+    },
+    {
+      "source": "datasets/lst-daily-cycle_global_5km_10daily_v1/data_descriptors/lst-daily-cycle_global_5km_10daily_v1.json",
+      "target": "legends/clms_global_lst_5km_v1_frac_valid_10daily-daily-cycle.png"
+    },
+    {
+      "source": "datasets/lst-daily-cycle_global_5km_10daily_v2/data_descriptors/lst-daily-cycle_global_5km_10daily_v2.json",
+      "target": "legends/clms_global_lst_5km_v2_min_10daily-daily-cycle.png"
+    },
+    {
+      "source": "datasets/lst-daily-cycle_global_5km_10daily_v2/data_descriptors/lst-daily-cycle_global_5km_10daily_v2.json",
+      "target": "legends/clms_global_lst_5km_v2_max_10daily-daily-cycle.png"
+    },
+    {
+      "source": "datasets/lst-daily-cycle_global_5km_10daily_v2/data_descriptors/lst-daily-cycle_global_5km_10daily_v2.json",
+      "target": "legends/clms_global_lst_5km_v2_med_10daily-daily-cycle.png"
+    },
+    {
+      "source": "datasets/lst-daily-cycle_global_5km_10daily_v2/data_descriptors/lst-daily-cycle_global_5km_10daily_v2.json",
+      "target": "legends/clms_global_lst_5km_v2_frac_valid_10daily-daily-cycle.png"
+    },
+    {
+      "source": "datasets/lst-tci_global_3km_10daily_v3/data_descriptors/lst-tci_global_3km_10daily_v3.json",
+      "target": "colourmaps/lst-tci_global_3km_10daily_v3/clms_global_lst_3km_v3_10daily-min.sld "
+    },
+    {
+      "source": "datasets/lst-tci_global_3km_10daily_v3/data_descriptors/lst-tci_global_3km_10daily_v3.json",
+      "target": "legends/lst-tci_global_3km_10daily_v3/clms_global_lst_3km_v3_frac_valid_10daily-tci.sld"
+    },
+    {
+      "source": "datasets/lst-tci_global_3km_10daily_v3/data_descriptors/lst-tci_global_3km_10daily_v3.json",
+      "target": "legends/lst-tci_global_3km_10daily_v3/clms_global_lst_3km_v3_frac_valid_10daily-tci.png"
+    },
+    {
+      "source": "datasets/lst-tci_global_5km_10daily_v1/data_descriptors/lst-tci_global_5km_10daily_v1.json",
+      "target": "legends/clms_global_lst_5km_v1_10daily-synthesis.png"
+    },
+    {
+      "source": "datasets/lst-tci_global_5km_10daily_v1/data_descriptors/lst-tci_global_5km_10daily_v1.json",
+      "target": "legends/clms_global_lst_5km_v1_10daily-tci.png"
+    },
+    {
+      "source": "datasets/lst-tci_global_5km_10daily_v2/data_descriptors/lst-tci_global_5km_10daily_v2.json",
+      "target": "legends/clms_global_lst_5km_v2_10daily-synthesis.png"
+    },
+    {
+      "source": "datasets/lst-tci_global_5km_10daily_v2/data_descriptors/lst-tci_global_5km_10daily_v2.json",
+      "target": "legends/clms_global_lst_5km_v2_10daily-tci.png"
+    },
+    {
+      "source": "datasets/lst_global_5km_hourly_v1/data_descriptors/lst_global_5km_hourly_v1.json",
+      "target": "legends/clms_global_lst_5km_v1_hourly.png"
+    },
+    {
+      "source": "datasets/lst_global_5km_hourly_v2/data_descriptors/lst_global_5km_hourly_v2.json",
+      "target": "legends/clms_global_lst_5km_v2_hourly.png"
+    },
+    {
+      "source": "datasets/lswt-nrt_global_1km_10daily_v1/data_descriptors/lswt-nrt_global_1km_10daily_v1.json",
+      "target": "legends/clms_global_lswt_1km_v1_10daily-nrt-lake_surface_water_temperature.png"
+    },
+    {
+      "source": "datasets/lswt-offline_global_1km_10daily_v1/data_descriptors/lswt-offline_global_1km_10daily_v1.json",
+      "target": "legends/clms_global_lswt_1km_v1_10daily-reproc-lake_surface_water_temperature.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v1/data_descriptors/lwq-nrt_global_100m_10daily_v1.json",
+      "target": "legends/clms_global_lwq_100m_v1_10daily-turbidity_blended_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v1/data_descriptors/lwq-nrt_global_100m_10daily_v1.json",
+      "target": "legends/clms_global_lwq_100m_v1_10daily-trophic_state_index.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v1/data_descriptors/lwq-nrt_global_100m_10daily_v1.json",
+      "target": "legends/clms_global_lwq_100m_v1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq-nrt_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-turbidity_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq-nrt_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-chla_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq-nrt_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-tsm_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq-nrt_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v1_10daily-trophic_state_index.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq-nrt_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-floating_cyanobacteria.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq-nrt_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq-nrt_global_100m_10daily_v2.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-turbidity_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq-nrt_global_100m_10daily_v2.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-chla_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq-nrt_global_100m_10daily_v2.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-tsm_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq-nrt_global_100m_10daily_v2.json",
+      "target": "legends/clms_global_lwq_100m_v1_10daily-trophic_state_index.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq-nrt_global_100m_10daily_v2.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-floating_cyanobacteria.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq-nrt_global_100m_10daily_v2.json",
+      "target": "legends/clms_global_lwq_100m_v1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_1km_10daily_v1/data_descriptors/lwq-nrt_global_1km_10daily_v1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-turbidity_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_1km_10daily_v1/data_descriptors/lwq-nrt_global_1km_10daily_v1.json",
+      "target": "legends/clms_global_lwq_1km_v1_10daily-nrt-trophic_state_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_1km_10daily_v1/data_descriptors/lwq-nrt_global_1km_10daily_v1.json",
+      "target": "legends/clms_global_lwq_100m_v1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v1/data_descriptors/lwq-nrt_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_lwq_300m_v1_10daily-reproc-turbidity_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v1/data_descriptors/lwq-nrt_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_lwq_300m_v1_10daily-reproc-trophic_state_index.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v1/data_descriptors/lwq-nrt_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_lwq_300m_v1_10daily-reproc-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq-nrt_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-turbidity_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq-nrt_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-chla_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq-nrt_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-tsm_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq-nrt_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v1_10daily-trophic_state_index.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq-nrt_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-floating_cyanobacteria.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq-nrt_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq-nrt_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_lwq_300m_v1_10daily-reproc-turbidity_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq-nrt_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-chla_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq-nrt_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-tsm_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq-nrt_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_lwq_300m_v1_10daily-reproc-trophic_state_index.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq-nrt_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-floating_cyanobacteria.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq-nrt_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_lwq_300m_v1_10daily-reproc-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-reproc_global_1km_10daily_v1/data_descriptors/lwq-reproc_global_1km_10daily_v1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-turbidity_mean.png"
+    },
+    {
+      "source": "datasets/lwq-reproc_global_1km_10daily_v1/data_descriptors/lwq-reproc_global_1km_10daily_v1.json",
+      "target": "legends/clms_global_lwq_1km_v1_10daily-nrt-trophic_state_mean.png"
+    },
+    {
+      "source": "datasets/lwq-reproc_global_1km_10daily_v1/data_descriptors/lwq-reproc_global_1km_10daily_v1.json",
+      "target": "legends/clms_global_lwq_100m_v1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-reproc_global_300m_10daily_v1/data_descriptors/lwq-reproc_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_lwq_300m_v1_10daily-reproc-turbidity_mean.png"
+    },
+    {
+      "source": "datasets/lwq-reproc_global_300m_10daily_v1/data_descriptors/lwq-reproc_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_lwq_300m_v1_10daily-reproc-trophic_state_index.png"
+    },
+    {
+      "source": "datasets/lwq-reproc_global_300m_10daily_v1/data_descriptors/lwq-reproc_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_lwq_300m_v1_10daily-reproc-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-chla_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-floating_cyanobacteria.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-tsm_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-turbidity_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_100m_10daily_v2/data_descriptors/lwq_global_100m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_100m_v2.1_10daily-trophic_state_index.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-chla_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-floating_cyanobacteria.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-Rw.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-trophic_state_index.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-tsm_mean.png"
+    },
+    {
+      "source": "datasets/lwq-nrt_global_300m_10daily_v2/data_descriptors/lwq_global_300m_10daily_v2.1.json",
+      "target": "legends/clms_global_lwq_300m_v2.1_10daily-turbidity_mean.png"
+    },
+    {
+      "source": "datasets/ndvi-lts_global_1km_10daily_v2/data_descriptors/ndvi-lts_global_1km_10daily_v2.json",
+      "target": "legends/clms_global_ndvi_1km_v2_statistics.png"
+    },
+    {
+      "source": "datasets/ndvi-sts_global_1km_10daily_v3/data_descriptors/ndvi-sts_global_1km_10daily_v3.json",
+      "target": "legends/clms_global_ndvi_1km_v3_statistics.png"
+    },
+    {
+      "source": "datasets/ndvi_global_1km_10daily_v2/data_descriptors/ndvi_global_1km_10daily_v2.json",
+      "target": "legends/clms_global_ndvi_1km_v2_10daily.png"
+    },
+    {
+      "source": "datasets/ndvi_global_300m_10daily_v1/data_descriptors/ndvi_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_ndvi_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/npp_global_300m_10daily_v1/data_descriptors/npp_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_npp_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/npp_global_300m_10daily_v2/data_descriptors/npp_global_300m_10daily_v2.json",
+      "target": "legends/clms_global_npp_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/sce_europe_500m_daily_v1/data_descriptors/sce_europe_500m_daily_v1.json",
+      "target": "legends/clms_ceuro_sce_500m_v1_daily.png"
+    },
+    {
+      "source": "datasets/sce_global_1km_daily_v1/data_descriptors/sce_global_1km_daily_v1.json",
+      "target": "legends/clms_global_sce_1km_v1_daily.png"
+    },
+    {
+      "source": "datasets/sce_global_1km_daily_v1/data_descriptors/sce_global_1km_daily_v1.json",
+      "target": "legends/clms_global_sce-unc_1km_v1_daily.png"
+    },
+    {
+      "source": "datasets/sce_northernhemisphere_1km_daily_v1/data_descriptors/sce_northernhemisphere_1km_daily_v1.json",
+      "target": "legends/clms_nhemi_sce_1km_v1_daily.png"
+    },
+    {
+      "source": "datasets/ssm_europe_1km_daily_v1/data_descriptors/ssm_europe_1km_daily_v1.json",
+      "target": "legends/clms_global_ssm_1km_v1_daily.png"
+    },
+    {
+      "source": "datasets/swe_northernhemisphere_5km_daily_v1/data_descriptors/swe_northernhemisphere_5km_daily_v1.json",
+      "target": "legends/clms_nhemi_swe_5km_v2_daily.png"
+    },
+    {
+      "source": "datasets/swe_northernhemisphere_5km_daily_v2/data_descriptors/swe_northernhemisphere_5km_daily_v2.json",
+      "target": "legends/clms_nhemi_swe_5km_v2_daily.png"
+    },
+    {
+      "source": "datasets/swi-static_global_12.5km_daily_v3/data_descriptors/swi-static_global_12.5km_daily_v3.json",
+      "target": "legends/clms_global_swi_12.5km_static_tc_v3.png"
+    },
+    {
+      "source": "datasets/swi-static_global_12.5km_daily_v3/data_descriptors/swi-static_global_12.5km_daily_v3.json",
+      "target": "legends/clms_global_swi_12.5km_static_wf_v3.png"
+    },
+    {
+      "source": "datasets/swi-static_global_12.5km_daily_v3/data_descriptors/swi-static_global_12.5km_daily_v3.json",
+      "target": "legends/clms_global_swi_12.5km_static_fm_v3.png"
+    },
+    {
+      "source": "datasets/swi-static_global_12.5km_daily_v3/data_descriptors/swi-static_global_12.5km_daily_v3.json",
+      "target": "legends/clms_global_swi_12.5km_static_ci_v3.png"
+    },
+    {
+      "source": "datasets/swi_europe_1km_daily_v1/data_descriptors/swi_europe_1km_daily_v1.json",
+      "target": "legends/clms_global_swi_1km_v1_daily.png"
+    },
+    {
+      "source": "datasets/swi_global_12.5km_10daily_v3/data_descriptors/swi_global_12.5km_10daily_v3.json",
+      "target": "legends/clms_global_swi_12.5km_v3_10daily.png"
+    },
+    {
+      "source": "datasets/swi_global_12.5km_daily_v3/data_descriptors/swi_global_12.5km_daily_v3.json",
+      "target": "legends/clms_global_swi_12.5km_v3_10daily.png"
+    },
+    {
+      "source": "datasets/wb_global_100m_monthly_v1/data_descriptors/wb_global_100m_monthly_v1.json",
+      "target": "legends/clms_global_wb_100m_v1_monthly.png"
+    },
+    {
+      "source": "datasets/wb_global_300m_10daily_v1/data_descriptors/wb_global_300m_10daily_v1.json",
+      "target": "legends/clms_global_wb_300m_v1_10daily.png"
+    },
+    {
+      "source": "datasets/wb_global_300m_monthly_v2/data_descriptors/wb_global_300m_monthly_v2.json",
+      "target": "legends/clms_global_wb_300m_v2_monthly.png"
+    }
+  ]
+}

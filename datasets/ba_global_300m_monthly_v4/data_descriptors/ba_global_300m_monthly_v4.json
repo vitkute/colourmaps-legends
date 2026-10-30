@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "0.0.4",
+  "eodataPath": "s3://eodata/CLMS/bio-geophysical/burnt_area/ba_global_300m_monthly_v4",
+  "browserName": "BA 300m monthly V4",
+  "browserSearchPath": "CLMS Bio-geophysical Parameters, Vegetation, Burnt Area",
+  "collectionDescription": "Burn scars — surfaces sufficiently affected by fire to show significant changes in vegetation cover and a temporarily darker ground surface due to ash — are mapped at global scale and at monthly intervals, with a spatial resolution of about 300 m. For each pixel, it delivers the date of burn together with the burnt fraction, both supported by quality indicators.",
+  "linkToCLMS": "https://land.copernicus.eu/en/products/vegetation/burnt-area-v4-monthly-300m",
+  "spatialCoverage": "Global",
+  "temporalExtent": {
+    "start": "2018",
+    "end": "present"
+  },
+  "nominalSpatialResolution": "300m",
+  "frequency": "monthly",
+  "thumbnailLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ba_global_300m_monthly_v4/thumbnails/ba_global_300m_monthly_v4.jpg",
+  "layers": [
+    {
+      "fileName": "BA300-DOB",
+      "layerBrowserName": "Burnt Area",
+      "shortDescription": "Day of burn detection",
+      "longDescription": "This variable indicates the day of the year on which the burn is detected.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ba_global_300m_monthly_v4/colourmaps/clms_global_ba-dob_300m_v4_monthly.sld",
+      "legendLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ba_global_300m_monthly_v4/legends/ba-dob_global_300m_monthly_v4.png",
+      "units": "[day of year]",
+      "scale": "1",
+      "offSet": "0",
+      "display": 1
+    },
+    {
+      "fileName": "BA300-CP",
+      "layerBrowserName": "Confidence probability",
+      "shortDescription": "Probability of the classification as burn",
+      "longDescription": "The confidence probability (CP) quantifies, for each pixel, the likelihood that the burn detected in the Day of Burn layer corresponds to an actual burn. It is derived by comparison with a reference dataset and is expressed as a dimensionless probability between 0 and 1.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ba_global_300m_monthly_v4/colourmaps/clms_global_ba-cp_300m_v4_monthly.sld",
+      "legendLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ba_global_300m_monthly_v4/legends/ba-cp_global_300m_monthly_v4.png",
+      "units": "",
+      "scale": "0.001",
+      "offSet": "0",
+      "display": 1
+    },
+    {
+      "fileName": "BA300-BF",
+      "layerBrowserName": "Burn Fraction",
+      "shortDescription": "Fraction of burned area",
+      "longDescription": "This variable gives the fraction of the pixel surface that has been affected by fire.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ba_global_300m_monthly_v4/colourmaps/clms_global_ba-bf_300m_v4_monthly.sld",
+      "legendLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ba_global_300m_monthly_v4/legends/ba-bf_global_300m_monthly_v4.png",
+      "units": "",
+      "scale": "0.001",
+      "offSet": "0",
+      "display": 1
+    },
+    {
+      "fileName": "BA300-LFP",
+      "layerBrowserName": "Large Fraction Probability",
+      "shortDescription": "Probability that the Fraction of Burn area is above 0.1.",
+      "longDescription": "This indicator expresses the probability that the burnt fraction of the pixel exceeds 0.1, and thus reflects the quality of the burnt fraction reported in the Burnt Fraction layer.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ba_global_300m_monthly_v4/colourmaps/clms_global_ba-lfp_300m_v4_monthly.sld",
+      "legendLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ba_global_300m_monthly_v4/legends/ba-lfp_global_300m_monthly_v4.png",
+      "units": "",
+      "scale": "0.001",
+      "offSet": "0",
+      "display": 1
+    }
+  ]
+}

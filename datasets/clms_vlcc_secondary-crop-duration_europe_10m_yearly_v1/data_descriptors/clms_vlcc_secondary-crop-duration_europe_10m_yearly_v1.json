@@ -1,0 +1,34 @@
+{
+  "name": "clms_vlcc_secondary-crop-duration_europe_10m_yearly_v1",
+  "browserName": "CPSCD 10m Yearly (2017-present)",
+  "browserSearchPath": "CLMS Land Cover and Land Use Mapping/Croplands/Cropping Patterns/Secondary Crop Duration",
+  "collectionDescription": "The High Resolution Layer Cropping Patterns - Secondary Crop Duration (CPSCD) raster product provides the duration (in days) of the cover crop season (can exceed the calendar year).\n\nThis dataset is provided annually starting in 2017 with 10 meter rasters (fully conformant with the EEA reference grid) in 100 x 100 km tiles covering the EEA38 countries.\n\nHigh Resolution Layer Croplands product is part of the European Union’s Copernicus Land Monitoring Service. Confidence layer available for the dataset.\n\nThis dataset includes data from the French Overseas Territories (DOMs)",
+  "linkToCLMS": "https://land.copernicus.eu/en/products/high-resolution-layer-croplands",
+  "spatialCoverage": "Europe",
+  "temporalExtent": {
+    "start": 2017,
+    "end": "present"
+  },
+  "layers": [
+    {
+      "fileName": "CLMS_HRLVLCC_CPSCD",
+      "layerBrowserName": "Secondary Crops Duration ",
+      "shortDescription": "Secondary crop season duration",
+      "longDescription": "Provides at pan-European level the duration of the secondary crop season at a spatial resolution of 10 m and a MMU of 0.25 ha.",
+      "colourMapLink": "datasets/clms_vlcc_secondary-crop-duration_europe_10m_yearly_v1/colourmaps/clms_vlcc_secondary-crop-duration_europe_10m_yearly_v1.sld",
+      "legendLink": "",
+      "odataLink": "CLMS/landcover_landuse/cropping_patterns/clms_vlcc_secondary-crop-duration_europe_10m_yearly_v1",
+      "display": 1
+    },
+    {
+      "fileName": "CLMS_HRLVLCC_CPSCDCL",
+      "layerBrowserName": "Secondary Crops Duration Confidence Layer",
+      "shortDescription": "Confidence of secondary crop duration",
+      "longDescription": "Confidence layer - a quality indicator for secondary crops duration.",
+      "colourMapLink": "datasets/clms_vlcc_secondary-crop-duration-confidence-layer_europe_10m_yearly_v1/colourmaps/clms_vlcc_secondary-crop-duration-confidence-layer_europe_10m_yearly_v1.sld",
+      "legendLink": "",
+      "odataLink": "CLMS/landcover_landuse/cropping_patterns/clms_vlcc_secondary-crop-duration-confidence-layer_europe_10m_yearly_v1",
+      "display": 1
+    }
+  ]
+}

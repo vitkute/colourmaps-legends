@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "0.0.4",
+  "eodataPath": "s3://eodata/CLMS/bio-geophysical/vegetation_indices/ndvi_global_300m_10daily_v2",
+  "browserName": "NDVI 300m 10-daily V2",
+  "browserSearchPath": "CLMS Bio-geophysical Parameters, Vegetation, Vegetation Indices, NDVI 300m 10-daily V2",
+  "collectionDescription": "The Normalized Difference Vegetation Index is a spectral index quantifying the amount and vigour of vegetation. Every 10-days, estimates are available at global scale, at a spatial resolution of ~300 m.",
+  "linkToCLMS": "https://land.copernicus.eu/en/products/vegetation/normalised-difference-vegetation-index-v2-0-300m",
+  "spatialCoverage": "Global",
+  "temporalExtent": {
+    "start": "2020",
+    "end": "2025"
+  },
+  "nominalSpatialResolution": "300m",
+  "frequency": "10daily",
+  "thumbnailLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ndvi_global_300m_10daily_v2/thumbnails/ndvi_global_300m_10daily_v2.jpg",
+  "layers": [
+    {
+      "fileName": "NDVI300-NDVI",
+      "layerBrowserName": "NDVI",
+      "shortDescription": "Normalized Difference Vegetation Index",
+      "longDescription": "The Normalized Difference Vegetation Index is a spectral index indicating the greenness of the vegetation.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ndvi_global_300m_10daily_v2/colourmaps/clms_global_ndvi-ndvi_300m_v2_10daily.sld",
+      "legendLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ndvi_global_300m_10daily_v2/legends/ndvi-ndvi_global_300m_10daily_v2.png",
+      "units": "",
+      "scale": "0.004",
+      "offSet": "-0.08",
+      "display": 1
+    },
+    {
+      "fileName": "NDVI300-UNC",
+      "layerBrowserName": "NDVI Uncertainty",
+      "shortDescription": "Uncertainty on NDVI",
+      "longDescription": "Uncertainty of the NDVI is calculated by propagating the uncertainties associated to the model parameters resulting from the inversion of the bidirectional reflectance distribution function.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ndvi_global_300m_10daily_v2/colourmaps/clms_global_ndvi-unc_300m_v2_10daily.sld",
+      "legendLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ndvi_global_300m_10daily_v2/legends/ndvi-unc_global_300m_10daily_v2.png",
+      "units": "",
+      "scale": "0.001",
+      "offSet": "0",
+      "display": 1
+    },
+    {
+      "fileName": "NDVI300-NOBS",
+      "layerBrowserName": "Number of Observations",
+      "shortDescription": "Number of clear-sky surface reflectance in the dekad time window.",
+      "longDescription": "Number of clear-sky surface reflectance used for the inversion of the bidirectional reflectance distribution function.",
+      "colourMapLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ndvi_global_300m_10daily_v2/colourmaps/clms_global_ndvi-nobs_300m_v2_10daily.sld",
+      "legendLink": "https://raw.githubusercontent.com/vitkute/colourmaps-legends/datasetidentifier-layout/datasets/ndvi_global_300m_10daily_v2/legends/ndvi-nobs_global_300m_10daily_v2.png",
+      "units": "",
+      "scale": "1",
+      "offSet": "0",
+      "display": 1
+    },
+    {
+      "fileName": "NDVI300-QFLAG",
+      "layerBrowserName": "Quality Flag",
+      "shortDescription": "Quality flag associated to NDVI",
+      "longDescription": "Quality flag associated to NDVI, describing the quality of the inversion of the bidirectional reflectance distribution function.",
+      "colourMapLink": "",
+      "legendLink": "",
+      "units": "",
+      "scale": "",
+      "offSet": "",
+      "display": 0
+    }
+  ]
+}

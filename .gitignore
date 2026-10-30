@@ -1,1 +1,4 @@
 .nfs*
+
+__pycache__/
+*.py[cod]
